@@ -4,7 +4,7 @@
     const time = document.getElementById("time").value;
     const maxView = document.getElementById("maxView").value;
 
-    const response = await fetch("https://pastebin-ruby.vercel.app/", {
+    const response = await fetch("https://pastebin-uf8z.vercel.app/", {
         // "http://localhost:3000/api/postes"
       method: "POST",
       headers: {

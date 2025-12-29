@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pastebin</title>
+  <link rel="stylesheet" href="paste.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Create Paste</h2>
+
+  <textarea id="content" rows="5" placeholder="Enter paste content"></textarea>
+
+  <input type="number" id="time" placeholder="Expire time (seconds)" />
+
+  <input type="number" id="maxView" placeholder="Max views" />
+
+  <button onclick="createPaste()">Create Paste</button>
+
+  <div class="result" id="result"></div>
+</div>
+<script src="paste.js"></script>
+</body>
+</html>

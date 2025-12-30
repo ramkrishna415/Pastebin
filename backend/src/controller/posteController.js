@@ -34,10 +34,17 @@ const createPoste = async(req, res)=>{
         views:maxView ?? null,
         expires
      });
-     res.status(201).json({
-        id:paste._id.toString(),
-        url:`${process.env.PORT}/p/${paste._id}`
-     });
+    //  res.status(201).json({
+    //     id:paste._id.toString(),
+    //     url:`${process.env.PORT}/p/${paste._id}`
+    //  });
+    const baseUrl = `${req.protocol}://${req.get("host")}`;
+
+res.status(201).json({
+  id: paste._id.toString(),
+  url: `${baseUrl}/p/${paste._id}`
+});
+
 
 };
 

@@ -33,8 +33,11 @@ npm install
 2. Start server
 node index.js
 
+<<<<<<< HEAD
 3. Open browser
 
+=======
+>>>>>>> 1a03a6c15c382ad956bb880da828c4b6aca9c7a1
 
 # Validation Rules
 - Content is required

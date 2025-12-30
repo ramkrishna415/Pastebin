@@ -5,7 +5,7 @@
     const maxView = document.getElementById("maxView").value;
   
     
-    const response = await fetch("https://pastebin-uf8z.vercel.app/api/postes", {
+    const response = await fetch("http://localhost:3000/api/postes", {
         // http://localhost:3000/
         // "https://pastebin-uf8z.vercel.app/"
       method: "POST",

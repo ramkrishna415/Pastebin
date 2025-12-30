@@ -5,7 +5,7 @@
     const maxView = document.getElementById("maxView").value;
   
     
-    const response = await fetch("https://pastebin-one-nu.vercel.app/api/postes", {
+    const response = await fetch("https://pastebins.onrender.com/api/postes", {
         // http://localhost:3000/
         // https://pastebin-one-nu.vercel.app/
       method: "POST",

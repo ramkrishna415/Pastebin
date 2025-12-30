@@ -14,10 +14,10 @@ app.use(express.static(path.join(__dirname, '../frontend')));
 
 app.use("/api",healthRought);
 app.use("/api",posteRought);
-// app.use("/",posteRought);
+ app.use("/",posteRought);
 
 const port = process.env.PORT || 3000;
-// app.get("/yy",(req,res)=>{
+// app.get("/",(req,res)=>{
 //     res.send("hello");
 // })
  mongoose.connect(process.env.MONGO_URL)

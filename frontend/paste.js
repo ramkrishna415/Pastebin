@@ -5,9 +5,9 @@
     const maxView = document.getElementById("maxView").value;
   
     
-    const response = await fetch("http://localhost:3000/api/postes", {
+    const response = await fetch("https://pastebin-one-nu.vercel.app/api/postes", {
         // http://localhost:3000/
-        // "https://pastebin-uf8z.vercel.app/"
+        // https://pastebin-one-nu.vercel.app/
       method: "POST",
       headers: {
         "Content-Type": "application/json"

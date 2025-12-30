@@ -33,8 +33,6 @@ npm install
 2. Start server
 node index.js
 
-3. Open browser
-http://localhost:3000
 
 # Validation Rules
 - Content is required

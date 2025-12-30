@@ -6,7 +6,9 @@ const healthRought = require("./src/routes/health");
 const posteRought = require("./src/routes/poste");
 
 dotenv.config();
+
 const app= express();
+app.use(express.urlencoded({extended:true}))
 app.use(express.json());
 app.use(cors());
 

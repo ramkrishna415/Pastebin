@@ -6,4 +6,4 @@ router.post("/postes",createPoste);
 router.get("/postes/:id",getPoste);
 router.get("/p/:id",viewPostPage);
 
-module.exports =router;
+module.exports = router;

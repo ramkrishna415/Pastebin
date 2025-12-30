@@ -10,7 +10,7 @@ const pasteSchema =new mongoose.Schema({
 
     },
     expires:{
-        type: Date,
+        type:Date,
         default:0
     }
 

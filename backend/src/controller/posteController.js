@@ -24,8 +24,8 @@ const createPoste = async(req, res)=>{
         }
         expires = new Date(Date.now()+ time*1000);
     }
-    if(maxView && maxView < 1){
-        return res.status(400).json({error:"invailed max views"});
+    if(maxView < 1 || maxView > 5){
+        return res.status(400).json({error:"please enter max view less than or equal to 5"});
     }
 
     //give the url imp
@@ -40,10 +40,10 @@ const createPoste = async(req, res)=>{
     //  });
     const baseUrl = `${req.protocol}://${req.get("host")}`;
 
-res.status(201).json({
-  id: paste._id.toString(),
-  url: `${baseUrl}/p/${paste._id}`
-});
+      res.status(201).json({
+      id: paste._id.toString(),
+      url: `${baseUrl}/p/${paste._id}`
+    });
 
 
 };

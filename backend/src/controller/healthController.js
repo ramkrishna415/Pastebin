@@ -4,4 +4,4 @@ const health = async(req,res)=>{
     res.status(200).json({ok:true});
 };
 
-module.exports={health};
+module.exports = {health};

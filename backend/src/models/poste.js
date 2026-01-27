@@ -7,7 +7,6 @@ const pasteSchema =new mongoose.Schema({
     views:{
         type: Number,
         default:null
-
     },
     expires:{
         type:Date,
@@ -15,4 +14,4 @@ const pasteSchema =new mongoose.Schema({
     }
 
 });
-module.exports = mongoose.model("Paste",pasteSchema);
+module.exports =mongoose.model("Paste",pasteSchema);

@@ -102,4 +102,4 @@ const viewPostPage= async(req,res) =>{
         `);
 
 };
-module.exports= {createPoste,getPoste,viewPostPage};
+module.exports = {createPoste,getPoste,viewPostPage};

@@ -8,6 +8,7 @@
     const response = await fetch("https://pastebins.onrender.com/api/postes", {
         // http://localhost:3000/
         // https://pastebin-one-nu.vercel.app/
+        
       method: "POST",
       headers: {
         "Content-Type": "application/json"
